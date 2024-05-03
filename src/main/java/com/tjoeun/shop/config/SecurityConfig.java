@@ -22,7 +22,7 @@ public class SecurityConfig {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.formLogin()
                 .loginPage("/member/login")
-                .defaultSuccessUrl("/",  true)
+                .defaultSuccessUrl("/", true)
                 .usernameParameter("email")
                 .failureUrl("/member/login/error")
                 .and()
