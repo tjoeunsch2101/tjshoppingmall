@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tjoeun.shop.TjshoppingmallApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-04-28T19:15:10" hostname="DESKTOP-JJ3MB07" time="0.61">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.tjoeun.shop.TjshoppingmallApplicationTests" time="0.61"/>
+  <system-out><![CDATA[04:15:03.313 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.tjoeun.shop.TjshoppingmallApplicationTests]: TjshoppingmallApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+04:15:03.430 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.tjoeun.shop.TjshoppingmallApplication for test class com.tjoeun.shop.TjshoppingmallApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.1)
+
+2024-04-29T04:15:03.888+09:00  INFO 328156 --- [    Test worker] c.t.shop.TjshoppingmallApplicationTests  : Starting TjshoppingmallApplicationTests using Java 17.0.10 with PID 328156 (started by N in C:\sts-4.21.1.RELEASE\workspace\tjshoppingmall)
+2024-04-29T04:15:03.889+09:00  INFO 328156 --- [    Test worker] c.t.shop.TjshoppingmallApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2024-04-29T04:15:04.864+09:00  INFO 328156 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-29T04:15:04.954+09:00  INFO 328156 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 7 JPA repository interfaces.
+2024-04-29T04:15:05.480+09:00  INFO 328156 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-29T04:15:05.552+09:00  INFO 328156 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-04-29T04:15:05.555+09:00  INFO 328156 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-04-29T04:15:05.734+09:00  INFO 328156 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-04-29T04:15:05.907+09:00  INFO 328156 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-29T04:15:05.928+09:00  INFO 328156 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-29T04:15:06.031+09:00  INFO 328156 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@77020328
+2024-04-29T04:15:06.034+09:00  INFO 328156 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-29T04:15:06.089+09:00 DEBUG 328156 --- [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@39a865c1) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@141dfcf9)
+2024-04-29T04:15:06.089+09:00 DEBUG 328156 --- [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@a7bbdbc) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@63eea8c4)
+2024-04-29T04:15:06.090+09:00 DEBUG 328156 --- [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@19924f15) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@621392ea)
+2024-04-29T04:15:06.090+09:00 DEBUG 328156 --- [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@35524549) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@23ec63af)
+2024-04-29T04:15:06.090+09:00 DEBUG 328156 --- [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@280d6a20) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@56f72909)
+2024-04-29T04:15:06.090+09:00 DEBUG 328156 --- [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@71285693) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3199a202)
+2024-04-29T04:15:06.091+09:00 DEBUG 328156 --- [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7286827b) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1dd64243)
+2024-04-29T04:15:06.091+09:00 DEBUG 328156 --- [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2ef913a4) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@520c3dcb)
+2024-04-29T04:15:06.091+09:00 DEBUG 328156 --- [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@145fe8ab) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3b347439)
+2024-04-29T04:15:06.374+09:00  INFO 328156 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-04-29T04:15:07.179+09:00  INFO 328156 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Hibernate: 
+    alter table if exists cart 
+       drop 
+       foreign key if exists FKix170nytunweovf2v9137mx2o
+Hibernate: 
+    alter table if exists cart_item 
+       drop 
+       foreign key if exists FK1uobyhgl1wvgt1jpccia8xxs3
+Hibernate: 
+    alter table if exists cart_item 
+       drop 
+       foreign key if exists FKdljf497fwm1f8eb1h8t6n50u9
+Hibernate: 
+    alter table if exists item_img 
+       drop 
+       foreign key if exists FKdd5u08y3ap4c46ayrqjf8g88m
+Hibernate: 
+    alter table if exists order_item 
+       drop 
+       foreign key if exists FKija6hjjiit8dprnmvtvgdp6ru
+Hibernate: 
+    alter table if exists order_item 
+       drop 
+       foreign key if exists FKt4dc2r9nbvbujrljv3e23iibt
+Hibernate: 
+    alter table if exists orders 
+       drop 
+       foreign key if exists FKpktxwhj3x9m4gth5ff6bkqgeb
+Hibernate: 
+    drop table if exists cart
+Hibernate: 
+    drop table if exists cart_item
+Hibernate: 
+    drop table if exists item
+Hibernate: 
+    drop table if exists item_img
+Hibernate: 
+    drop table if exists member
+Hibernate: 
+    drop table if exists order_item
+Hibernate: 
+    drop table if exists orders
+Hibernate: 
+    drop sequence cart_item_seq
+Hibernate: 
+    drop sequence cart_seq
+Hibernate: 
+    drop sequence item_img_seq
+Hibernate: 
+    drop sequence item_seq
+Hibernate: 
+    drop sequence member_seq
+Hibernate: 
+    drop sequence order_item_seq
+Hibernate: 
+    drop sequence orders_seq
+Hibernate: 
+    create sequence cart_item_seq start with 1 increment by 50
+Hibernate: 
+    create sequence cart_seq start with 1 increment by 50
+Hibernate: 
+    create sequence item_img_seq start with 1 increment by 50
+Hibernate: 
+    create sequence item_seq start with 1 increment by 50
+Hibernate: 
+    create sequence member_seq start with 1 increment by 50
+Hibernate: 
+    create sequence order_item_seq start with 1 increment by 50
+Hibernate: 
+    create sequence orders_seq start with 1 increment by 50
+Hibernate: 
+    create table cart (
+        cart_id bigint not null,
+        member_id bigint,
+        reg_time datetime(6),
+        update_time datetime(6),
+        created_by varchar(255),
+        modified_by varchar(255),
+        primary key (cart_id)
+    ) engine=InnoDB
+Hibernate: 
+    create table cart_item (
+        count integer not null,
+        cart_id bigint,
+        cart_item_id bigint not null,
+        item_id bigint,
+        reg_time datetime(6),
+        update_time datetime(6),
+        created_by varchar(255),
+        modified_by varchar(255),
+        primary key (cart_item_id)
+    ) engine=InnoDB
+Hibernate: 
+    create table item (
+        price integer not null,
+        stock_number integer not null,
+        item_id bigint not null,
+        reg_time datetime(6),
+        update_time datetime(6),
+        item_nm varchar(50) not null,
+        created_by varchar(255),
+        item_sell_status enum ('SELL','SOLD_OUT'),
+        modified_by varchar(255),
+        item_detail tinytext not null,
+        primary key (item_id)
+    ) engine=InnoDB
+Hibernate: 
+    create table item_img (
+        item_id bigint,
+        item_img_id bigint not null,
+        reg_time datetime(6),
+        update_time datetime(6),
+        created_by varchar(255),
+        img_name varchar(255),
+        img_url varchar(255),
+        modified_by varchar(255),
+        ori_img_name varchar(255),
+        repimg_yn varchar(255),
+        primary key (item_img_id)
+    ) engine=InnoDB
+Hibernate: 
+    create table member (
+        member_id bigint not null,
+        reg_time datetime(6),
+        update_time datetime(6),
+        address varchar(255),
+        created_by varchar(255),
+        email varchar(255),
+        modified_by varchar(255),
+        name varchar(255),
+        password varchar(255),
+        role enum ('ADMIN','USER'),
+        primary key (member_id)
+    ) engine=InnoDB
+Hibernate: 
+    create table order_item (
+        count integer not null,
+        order_price integer not null,
+        item_id bigint,
+        order_id bigint,
+        order_item_id bigint not null,
+        reg_time datetime(6),
+        update_time datetime(6),
+        created_by varchar(255),
+        modified_by varchar(255),
+        primary key (order_item_id)
+    ) engine=InnoDB
+Hibernate: 
+    create table orders (
+        member_id bigint,
+        order_date datetime(6),
+        order_id bigint not null,
+        reg_time datetime(6),
+        update_time datetime(6),
+        created_by varchar(255),
+        modified_by varchar(255),
+        order_status enum ('CANCEL','ORDER'),
+        primary key (order_id)
+    ) engine=InnoDB
+Hibernate: 
+    alter table if exists cart 
+       add constraint UK_7dds3r67nkhxm9sbs9r5obd46 unique (member_id)
+Hibernate: 
+    alter table if exists member 
+       add constraint UK_mbmcqelty0fbrvxp1q58dn57t unique (email)
+Hibernate: 
+    alter table if exists cart 
+       add constraint FKix170nytunweovf2v9137mx2o 
+       foreign key (member_id) 
+       references member (member_id)
+Hibernate: 
+    alter table if exists cart_item 
+       add constraint FK1uobyhgl1wvgt1jpccia8xxs3 
+       foreign key (cart_id) 
+       references cart (cart_id)
+Hibernate: 
+    alter table if exists cart_item 
+       add constraint FKdljf497fwm1f8eb1h8t6n50u9 
+       foreign key (item_id) 
+       references item (item_id)
+Hibernate: 
+    alter table if exists item_img 
+       add constraint FKdd5u08y3ap4c46ayrqjf8g88m 
+       foreign key (item_id) 
+       references item (item_id)
+Hibernate: 
+    alter table if exists order_item 
+       add constraint FKija6hjjiit8dprnmvtvgdp6ru 
+       foreign key (item_id) 
+       references item (item_id)
+Hibernate: 
+    alter table if exists order_item 
+       add constraint FKt4dc2r9nbvbujrljv3e23iibt 
+       foreign key (order_id) 
+       references orders (order_id)
+Hibernate: 
+    alter table if exists orders 
+       add constraint FKpktxwhj3x9m4gth5ff6bkqgeb 
+       foreign key (member_id) 
+       references member (member_id)
+2024-04-29T04:15:08.327+09:00  INFO 328156 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29T04:15:08.872+09:00  INFO 328156 --- [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-29T04:15:09.601+09:00  WARN 328156 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-29T04:15:10.026+09:00  INFO 328156 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5a96081a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@29f0e941, org.springframework.security.web.context.SecurityContextHolderFilter@59e7a6d8, org.springframework.security.web.header.HeaderWriterFilter@44bd11a2, org.springframework.security.web.csrf.CsrfFilter@4310007c, org.springframework.security.web.authentication.logout.LogoutFilter@165ec33, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3746749, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@69503026, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7959d16a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e6c69f, org.springframework.security.web.access.ExceptionTranslationFilter@341f2f4c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@70fdecff]
+2024-04-29T04:15:10.534+09:00  INFO 328156 --- [    Test worker] c.t.shop.TjshoppingmallApplicationTests  : Started TjshoppingmallApplicationTests in 6.899 seconds (process running for 8.374)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
