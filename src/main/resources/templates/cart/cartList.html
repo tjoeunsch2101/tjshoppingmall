@@ -144,7 +144,7 @@
                         alert('로그인 후 이용해주세요');
                         location.href='/members/login';
                     }else if(jqXHR.status == '403'){
-                        alert('주문할 상품을 체크해 주세요');
+                        alert('주문할 상품을 체크해야 합니다.');
                         location.href='/cart';
                     } else{
                         alert(jqXHR.responseJSON.message);
