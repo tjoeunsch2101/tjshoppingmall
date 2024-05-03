@@ -1,13 +1,14 @@
 package com.tjoeun.shop.service;
 
-import lombok.extern.java.Log;
+import lombok.extern.slf4j.Slf4j;
+
 import org.springframework.stereotype.Service;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.util.UUID;
 
 @Service
-@Log
+@Slf4j
 public class FileService {
 
     public String uploadFile(String uploadPath, String originalFileName, byte[] fileData) throws Exception{
