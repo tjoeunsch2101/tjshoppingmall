@@ -28,15 +28,13 @@ public class SecurityConfig {
                 .and()
                 .logout()
                 .logoutRequestMatcher(new AntPathRequestMatcher("/member/logout"))
-                .logoutSuccessUrl("/")
-        ;
+                .logoutSuccessUrl("/");
 
         http.authorizeRequests()
                 .requestMatchers("/css/**", "/js/**", "/image/**").permitAll()
                 .requestMatchers("/", "/member/**", "/item/**", "/images/**").permitAll()
                 .requestMatchers("/admin/**").hasRole("ADMIN")
-                .anyRequest().authenticated()
-        ;
+                .anyRequest().authenticated();
 
     		// 관리자로 로그인 요청하기
     		http.exceptionHandling(exception -> exception
